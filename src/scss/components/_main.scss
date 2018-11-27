@@ -1,0 +1,353 @@
+.nosotros__main {
+    width: 100%;
+    & .nosotros__title h2 {
+        margin-top: 35px;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        &::after {
+            content: '';
+            display: block;
+            border-top: 1px solid #3498db;
+            width: 100px;
+            margin: auto;
+        }
+    }
+    & .nosotros__content {
+        margin-top: 50px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    & .nosotros__col1 {
+        width: 60%;
+    }
+    & .nosotros__col2 {
+        width: 30%;
+        background: rgba(0, 0, 0, .6);
+        border-radius: 10px;
+        height: 400px;
+        color: #fff;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .nosotros__colegio {
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+.bb {
+    margin-top: 40px;
+}
+
+.boton__about {
+    display: inline-block;
+    // background-color: rgba(0,105,217,.8);
+    background-color: rgb(32, 97, 172);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nosotros__col1 img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1030px) {
+    .nosotros__content {
+        flex-direction: column;
+    }
+    .nosotros__col2 {
+        width: 100%;
+    }
+}
+
+.academico__nivel {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    & .academico__title {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        &::after {
+            content: '';
+            display: block;
+            border-top: 2px solid #3498db;
+            width: 100px;
+            margin: auto;
+        }
+    }
+}
+
+.columna__principal {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.content__card {
+    width: 330px;
+    height: 290px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    &:hover {
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+    & img {
+        width: 330px;
+        height: 220px;
+    }
+    & a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #3498db;
+        font-size: 13px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.info__mision {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    & img {
+        width: 400px;
+    }
+    & .content__mision {
+        width: 40%;
+        margin-right: 40px;
+        & p {
+            font-weight: lighter;
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+}
+
+.info__vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    & img {
+        width: 400px;
+        margin-right: 40px;
+    }
+    & .content__vision {
+        width: 40%;
+        & p {
+            font-weight: lighter;
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .info__vision {
+        flex-direction: column-reverse;
+        &::after {
+            content: 'Visión';
+            display: inline-block;
+            font-size: 30px;
+            font-weight: lighter;
+            padding-bottom: 10px;
+            border-top: 2px solid red;
+        }
+        & .img {
+            display: none;
+        }
+    }
+    .info__mision {
+        flex-direction: column-reverse;
+        &::after {
+            content: 'Misión';
+            display: inline-block;
+            font-size: 30px;
+            font-weight: lighter;
+            padding-bottom: 10px;
+            border-top: 2px solid red;
+        }
+        & .img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:769px) {
+    .info__mision {
+        flex-direction: column-reverse;
+        & .content__mision {
+            width: 90%;
+            margin: auto;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .info__vision {
+        flex-direction: column-reverse;
+        & .content__vision {
+            width: 90%;
+            margin: auto;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+.info__cole {
+    width: 100%;
+    // background-color:  rgb(32, 97,172);
+    background-color: #2B2D31;
+    // background-color: #021F47;
+    height: 255px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .info__title {
+        color: #fff;
+        font-weight: lighter;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+    & .info__descrip {
+        color: #fff;
+        font-weight: lighter;
+        width: 50%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    & .btn__info {
+        background-color: #EB5162;
+        font-size: 15px;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        border: none;
+        transition: all 0.9s ease;
+        font-weight: bold;
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            color: #000;
+        }
+    }
+    & .btn__info,
+    .info__descrip {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:456px) {
+    .info__cole {
+        height: auto;
+    }
+    .info__title {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .info__descrip {
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+.colegio__ubicacion {
+    width: 90%;
+    margin: auto;
+    & .title__ubicacion {
+        margin-top: 30px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 30px;
+        &::after {
+            content: '';
+            display: block;
+            border-top: 2px solid #3498db;
+            width: 100px;
+            margin: auto;
+        }
+    }
+}
+
+.colegio__main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.colegio__maps {
+    width: 40%;
+    height: 400px;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, .2);
+    margin-right: 30px;
+    & iframe {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+.colegio__info {
+    width: 40%;
+    height: 400px;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, .2);
+    margin-right: 30px;
+    & iframe {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .colegio__main {
+        display: flex;
+        justify-content: center;
+    }
+    .colegio__info img {
+        display: none;
+    }
+    .colegio__maps {
+        width: 100%;
+        margin-right: 0;
+    }
+}

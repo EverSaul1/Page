@@ -1,0 +1,54 @@
+- 
+    var pages= [
+    {
+        title:'Inicio',
+        child:[]
+    },
+    {
+        title:'Nosotros',
+        child:[]
+    },
+    {
+        title:'Niveles',
+        child:[]
+    },
+    {
+        title:'Matricula',
+        child:[]
+    },
+    {
+        title:'Contacto',
+        child:[]
+    }
+    ]
+
+#slides
+    ul.slides-container
+        li
+          img(src="img/a.jpg", alt="Imagen 1")
+        li
+          img(src="img/niños.jpg", alt="Imagen 2")
+        li
+          img(src="img/alumnos.jpg", alt="Imagen 3")
+        li
+          img(src="img/b.jpg", alt="Imagen 4")
+    header.header
+       
+        nav.nav__primero#nav
+            //- a(href="#" class="next") &#62;    
+            //- a(href="#" class="prev") &#60;
+            .contenedor__nav
+                .contenedor__logo
+                    .logo
+                        p.title__colegio #{nombreSitio}       
+                .enlaces_nav#enlaces
+                    each page in pages
+                        a.menu__link.btn-header(href=page.url id=`enlace-${page.title}`)= page.title
+                        //- if page.child.length > 0
+                        //-     ul.children  
+                        //-         each subPages in page.child 
+                        //-             li.menu__item.sub__menu.submenu: a(href= subPages.url)= subPages.title 
+                .icono#open
+                    span.fas.fa-bars
+        .title__banner
+              

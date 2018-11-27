@@ -1,0 +1,22 @@
+
+mixin academico(image,title)
+    article.card
+        .card__image
+            //- img(src=`img/${image}`, alt="Imagen")
+            img(src=`img/${image}`, alt="")
+        h2.card__title= title
+        a(href="#") Más Información 
+
+mixin card(image,title,description,fecha,dia_mes_ano)
+    article.card
+        .card__image
+            img(src=`img/${image}`, alt="Imagen")
+        h2.card__title= title    
+        p.card__body= description
+        block footer-card
+        footer.card__footer
+            time(datetime=`${fecha}`)= dia_mes_ano
+
+
+mixin boton(title)
+    button.boton__about= title

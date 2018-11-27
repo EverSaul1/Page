@@ -1,0 +1,54 @@
+extends ../templates/layout
+
+block append configuracion
+  - pagina_actual= "Bienvenidos";
+
+//- block preload
+//-     #contenedor_carga
+//-       #carga
+      
+block contenido
+      .nosotros__main#nosotros
+          .nosotros__title
+              h2 Sobre Nosotros
+          .nosotros__content 
+            .nosotros__col1
+                    img(src="img/about.jpg", alt="Niñas Felices")       
+                    //- iframe(width="560" height="315" src="https://www.youtube.com/embed/IeVf8hBs4vE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
+            .nosotros__col2
+                .nosotros__colegio  
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique iusto eligendi architecto aperiam, neque et voluptatibus, cum fugiat omnis eum autem id ullam necessitatibus magni est tenetur sed deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique quam possimus asperiores ad praesentium error expedita. Neque veritatis corrupti repellat perspiciatis et quis voluptates, cupiditate dolorem temporibus aliquid ipsam!
+                    p.bb 
+                      a.boton__about Mas información
+      .academico__nivel#niveles
+          h2.academico__title Niveles Académicos
+          .columna__principal
+              .columna1.content__card
+                +academico('inicial.jpg','Inicial')
+              .columna2.content__card
+                +academico('primaria.jpg','Primaria') 
+              .columna3.content__card
+                +academico('secundaria.jpeg','Secundaria')
+      .info__cole#matricula
+          h1.info__title Matrícula Virtual 2019
+          p.info__descrip Ya puedes acceder al Sistema de Matrícula Virtual 2019; el sistema se encargará de guiarlo paso a paso en dicho proceso; además, podrá descargar todos los documentos necesarios.
+          button.btn__info ¡Matriculate Ya!
+      .info__mision#mision
+          .img
+             img(src="img/asd.png", alt="Mision")
+          .content__mision
+              p " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia neque error sequi nisi minus. Nostrum beatae praesentium nulla. Provident saepe odio vitae eum architecto ad sapiente! Incidunt fuga eaque quaerat tempora veniam libero explicabo ab quisquam. Nam iure dolor doloribus explicabo laboriosam, voluptates earum voluptatibus sunt molestias. Ut, deleniti maxime! "
+      .info__vision
+          .img
+             img(src="img/hernas.png", alt="Vision")
+          .content__vision
+              p " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, laboriosam nesciunt adipisci deserunt ipsa facilis commodi velit tenetur ducimus, similique quibusdam veniam necessitatibus voluptatum recusandae rerum autem molestiae, iste aut accusantium. Omnis, provident sed. Modi autem error quod quam nihil, ex laudantium dolorum sit recusandae veritatis expedita nobis deserunt odit? "
+      .colegio__ubicacion#contacto
+          h2.title__ubicacion Encuentranos en 
+          .colegio__main
+              .colegio__maps
+                    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.882338450178!2d-70.14499978630202!3d-15.490759862921102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9167f3e042ca2ce3%3A0xf06fbdd1c4dd3362!2sColegio+Adventista+%22Pedro+Kalbermatter%22!5e0!3m2!1ses!2spe!4v1541198391182', width='500', height='550', frameborder='1', style='border:0', allowfullscreen='')
+              .colegio__info
+                    //- img(src="img/ubi.jpg", alt="Ubicacion__Joven")
+                    iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkalbermatterjuliaca%2F&tabs=timeline&width=450&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media")
+          

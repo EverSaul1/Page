@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700');
+$roboto :'Roboto',
+sans-serif;
+$open:'Open Sans',
+sans-serif;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $open;
+    // background-color: #eaf2e3;
+    background-color: #fff;
+}
